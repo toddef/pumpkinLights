@@ -2,7 +2,7 @@
 #define LED_PIN     6
 #define COLOR_ORDER RGB
 #define CHIPSET     WS2812
-#define NUM_LEDS    30
+#define NUM_LEDS    40
 
 #define BRIGHTNESS  255
 #define FRAMES_PER_SECOND 60

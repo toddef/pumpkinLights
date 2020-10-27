@@ -5,8 +5,37 @@
 CRGB leds[NUM_LEDS];
 
 const CRGB LEDS_STARTING_COLORS[NUM_LEDS] = {
+// Frankenstirn
    CRGB::Green
   ,CRGB::DarkGreen 
+// Mummy  
+  ,CRGB::Gold
+  ,CRGB::Yellow
+// Dracula  
+  ,CRGB::Red
+  ,CRGB::DarkRed
+// reaper head  
+  ,CRGB::Orange
+  ,CRGB::DarkOrange
+// halooween pumpkin  
+  ,CRGB::Orange
+  ,CRGB::DarkOrange
+// mike myers  
+  ,CRGB::Orange
+  ,CRGB::DarkOrange
+// mike mysers 2  
+  ,CRGB::Orange
+  ,CRGB::DarkOrange
+// witch
+  ,CRGB::Green
+  ,CRGB::DarkGreen
+// pumpkin
+  ,CRGB::Orange
+  ,CRGB::DarkOrange
+// skeleton
+  ,CRGB::White
+  ,CRGB::White
+  
 };
 
 int brightnessForFade[NUM_LEDS];
@@ -20,7 +49,7 @@ void setup() {
   FastLED.addLeds<CHIPSET, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
   FastLED.setBrightness( BRIGHTNESS );
   
-  fill_rainbow( leds, NUM_LEDS, 0, 7);
+  fill_rainbow( leds, NUM_LEDS, 0, 40);
   FastLED.show(); // display this frame
 
   delay(3000); // sanity delay
